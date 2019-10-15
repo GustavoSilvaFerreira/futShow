@@ -1,0 +1,24 @@
+<form [formGroup]="formAddPlayer" class="mt-4" novalidate>
+  <div class="form-group">
+    <label class="sr-only" for="name">Nome</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">Nome</div>
+      </div>
+      <input type="text" class="form-control" [class.is-valid]="formAddPlayer.get('name').valid" [class.is-invalid]="formAddPlayer.get('name').invalid && formAddPlayer.get('name').touched" formControlName="name" id="name" placeholder="Digite o nome">
+    </div>
+  </div>
+
+  <fieldset>
+    <legend>Posição</legend>
+    <div class="form-check">
+      <input type="radio" id="linha" class="form-check-input" formControlName="position" value="L" aria-label="Radio input">
+      <label class="form-check-label" for="linha">Linha</label>
+    </div>
+
+    <div class="form-check">
+      <input type="radio" id="gol" class="form-check-input" formControlName="position" value="G" aria-label="Radio input">
+      <label class="form-check-label" for="gol">Goleiro</label>
+    </div>
+  </fieldset>
+</form>

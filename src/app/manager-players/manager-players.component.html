@@ -1,0 +1,14 @@
+<div class="text-right mt-2">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadastrarJogador">
+    <span class="glyphicon glyphicon-plus glyphicon-sm white" aria-hidden="true"></span>
+    Cadastrar jogador
+  </button>
+</div>
+
+<app-modal [id]="'cadastrarJogador'"
+            [modalType]="'addPlayer'"
+            [title]="'Cadastrar jogador'"
+            [nameConfirm]="'Cadastrar'"
+            [nameClose]="'Descartar'"
+            (emitOk)="addPlayer($event)"
+            (emitClose)="clearForm()"></app-modal>

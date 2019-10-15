@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Colors */
+.text-primary-color {
+  color: rgb(22, 58, 104) !important;
+}
+
+.text-secundary-color {
+  color: rgb(182, 174, 95) !important;
+}
+
+.text-secundary-color-2 {
+  color: rgb(158, 23, 23) !important;
+}
+
+.bg-primary-color,
+.btn-primary {
+  background-color: rgb(22, 58, 104) !important;
+}
+
+.bg-secundary-color {
+  background-color: rgb(182, 174, 95) !important;
+}
+
+.bg-secundary-color-2 {
+  background-color: rgb(158, 23, 23) !important;
+}
+
+.btn-primary {
+  border-color: rgb(22, 58, 104) !important;
+}
+
+.border-top-secundary-color-1,
+.border-bottom-secundary-color-1 {
+  border-color: rgb(182, 174, 95) !important;
+}
+
+.border-top-secundary-color-2,
+.border-bottom-secundary-color-2 {
+  border-color: rgb(158, 23, 23) !important;
+}
+
+.wrapper {
+  min-width: 340px;
+}
+
+.content-wrapper{
+  /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
+padding-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+}
+
+.bg-orange {
+  background-color: rgb(255, 88, 0);
+}
+
+.text-through {
+  text-decoration: line-through;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
